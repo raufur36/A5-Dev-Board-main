@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function() {
+sdocument.addEventListener('DOMContentLoaded', function() {
     const featureContainer = document.getElementById('feautre-container');
     const backButton = document.getElementById('back-btn');
     
