@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-blue-50" >
+    <header class="mx-40" >
+        <nav class="" >
+            <div class="pt-5" >
+                <div class="flex justify-between items-center shadow-xl px-7 py-4 rounded-lg bg-white " >
+                    <div class="inline-flex items-center gap-4" >
+                        <img src="assets/logo.png" alt="">
+                        <h1>DevBoard</h1>
+                    </div>
+                    <div class="" >
+                       <button id="back-btn" class="bg-blue-700 px-3 py-2 text-white font-bold rounded-lg" >Book to Desk</button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="" >
+        <section>
+            <div class="text-center mt-5" >
+                <h1 class="font-bold text-2xl " >Blogs</h1>
+            </div>
+        </section>
+        <section class="mx-40 mt-7" >
+            <div class=" bg-white px-5 py-3 rounded-lg divide-y-3 divide-dashed divide-gray-300" >
+            <h1 class="font-bold py-2" >Question-1: What are the diffreant ways to select an element in the DOM?</h1>
+            <p class="mt-3" >The most common ways to select elements in the DOM are:
+                querySelector – We mostly use it when we try to work using CSS selector.
+                querySelectorAll – We mostly use it when we try to work using CSS selector for all the selector.
+                getElementById – We use to work using our Unique ID.
+                getElementsByClassName – We use it only for to use Class name.
+                getElementsByTagName – We use it only for to use tags name like ul li etc.
+                and also there is more methods like getElementsByName, document.forms, and document.images etc.</p>
+            </div>
+        </section>
+        <section class="mx-40 mt-6" >
+            <div class=" bg-white px-5 py-3 rounded-lg divide-y-3 divide-dashed divide-gray-300" >
+            <h1 class="font-bold py-2" >Question-2: What is the difference between innerHTML, innerText, and textContent?</h1>
+            <p class="mt-3" >The difference between innerHTML, innerText, and textContent is: <br>
+                1. <span class="font-bold" >innerHTML:</span> innerHTML help use to get get the element <br>
+                2. <span class="font-bold" >innerText:</span>innerText help use to get the elements value like Text <br>
+                3. <span class="font-bold" >textContent:</span> Retrieves or sets all text, including hidden content, without considering formatting. </p>
+            </div>
+        </section>
+        <section class="mx-40 mt-6" >
+            <div class=" bg-white px-5 py-3 rounded-lg divide-y-3 divide-dashed divide-gray-300" >
+            <h1 class="font-bold py-2" >Question-3: What is event delegation in the DOM?</h1>
+            <p class="mt-3" >Event delegation is a technique in the DOM where you attach a single event listener to a parent element instead of multiple listeners to individual child elements. <br> This is useful for handling events on dynamically added elements.</p>
+            </div>
+        </section>
+        <section class="mx-40 mt-6 pb-28" >
+            <div class=" bg-white px-5 py-3 rounded-lg divide-y-3 divide-dashed divide-gray-300" >
+            <h1 class="font-bold py-2" >Question-4: What is event bubbling in the DOM?</h1>
+            <p class="mt-3" >Event bubbling is a concept in the DOM where an event that occurs on a child element propagates (or "bubbles") up through its parent elements, all the way to the root of the document. <br> This means that when an event is triggered on an element, it is also triggered on its ancestors unless stopped.</p>
+            </div>
+        </section>
+    </main>
+    <script src="js/blogBoard.js"></script>
+</body>
+</html>
