@@ -13,6 +13,7 @@ document.querySelectorAll('#completed-btn').forEach(button => {
         })
 
         if (taskAssignedValue > 0 && devBoardValue > 0) {
+            alert('Board Updated Successfully');
             let taskAssigned = taskAssignedValue - 1;  
             let devBoard = devBoardValue + 1;
             
@@ -21,12 +22,13 @@ document.querySelectorAll('#completed-btn').forEach(button => {
             
          
             const taskTitle = this.closest('.px-4').querySelector('[id^="quote-status"]').innerText;
+            const customText = 'You have successfully';
 
             
             const assignedValue = document.getElementById('container-status');
             const p = document.createElement('p');
             p.classList.add('bg-blue-200', 'text-xs', 'rounded-lg', 'mt-4', 'px-4', 'py-2');
-            p.innerText = taskTitle;
+            p.innerText = customText + ' ' + taskTitle;
             assignedValue.appendChild(p);
 
             document.getElementById('clear-activity').addEventListener('click', function (event) {
